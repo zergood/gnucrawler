@@ -1,4 +1,4 @@
 gnucrawler
 ==========
 
-Gnutella network parser(academic)
+Gnutella network crawler(academic)
