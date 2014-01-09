@@ -5,6 +5,6 @@ import java.util.TimerTask;
 public class CrawlerInterrupt extends TimerTask{
     public void run(){
         System.out.println("crawler interrupted!");
-        Crawler.setCrawlingFlag(false);
+        CrawlerMain.setCrawlingFlag(false);
     }
 }
