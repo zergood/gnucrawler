@@ -1,23 +1,58 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8d37c8e4-d415-447d-8d12-02f6ccfde1c0" name="Default" comment="Before cleaning commit.">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/com/zergood/gnucrawler/ChannelManager.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/com/zergood/gnucrawler/CrawlerMain.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/com/zergood/gnucrawler/CrawlerTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/com/zergood/gnucrawler/EntryPoint.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/com/zergood/gnucrawler/Host.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/com/zergood/gnucrawler/Parser.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_3_8_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jgrapht_jgrapht_0_9_1_SNAPSHOT.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/com/zergood/gnucrawler/JGraphAdapterDemo.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/gnucrawler/AppTest.java" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/com/zergood/gnucrawler/Crawler.java" afterPath="$PROJECT_DIR$/src/main/com/zergood/gnucrawler/Crawler.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/com/zergood/gnucrawler/CrawlerInterrupt.java" afterPath="$PROJECT_DIR$/src/main/com/zergood/gnucrawler/CrawlerInterrupt.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/log/crawler.log" afterPath="$PROJECT_DIR$/log/crawler.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gnucrawler.iml" afterPath="$PROJECT_DIR$/gnucrawler.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+    <list default="true" id="8d37c8e4-d415-447d-8d12-02f6ccfde1c0" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/com/zergood/gnucrawler/interruptors/ByteOrderInterrupt.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/com/zergood/gnucrawler/CrawlerInterrupt.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/com/zergood/gnucrawler/CrawlerMain.java" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/com/dan/jtella/ConnectedHostsListener.java" afterPath="$PROJECT_DIR$/temp/dan/jtella/ConnectedHostsListener.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/com/dan/jtella/GWebCaches.java" afterPath="$PROJECT_DIR$/temp/dan/jtella/GWebCaches.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/com/dan/jtella/GetHostsFromCache.java" afterPath="$PROJECT_DIR$/temp/dan/jtella/GetHostsFromCache.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/com/dan/jtella/HostsChangedEvent.java" afterPath="$PROJECT_DIR$/temp/dan/jtella/HostsChangedEvent.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/com/dan/jtella/PushResponseInterface.java" afterPath="$PROJECT_DIR$/temp/dan/jtella/PushResponseInterface.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/com/dan/jtella/PushWaits.java" afterPath="$PROJECT_DIR$/temp/dan/jtella/PushWaits.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/com/dan/jtella/com.dan.jtella.log4j.properties" afterPath="$PROJECT_DIR$/temp/dan/jtella/com.dan.jtella.log4j.properties" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/com/dan/jtella/protocol.com.dan.jtella.log4j.properties" afterPath="$PROJECT_DIR$/temp/dan/jtella/protocol.com.dan.jtella.log4j.properties" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/com/kenmccrary/jtella/Connection.java" afterPath="$PROJECT_DIR$/temp/kenmccrary/jtella/Connection.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/com/kenmccrary/jtella/ConnectionData.java" afterPath="$PROJECT_DIR$/temp/kenmccrary/jtella/ConnectionData.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/com/kenmccrary/jtella/ConnectionList.java" afterPath="$PROJECT_DIR$/temp/kenmccrary/jtella/ConnectionList.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/com/kenmccrary/jtella/ConnectionManager.java" afterPath="$PROJECT_DIR$/temp/kenmccrary/jtella/ConnectionManager.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/com/kenmccrary/jtella/DownloadConstants.java" afterPath="$PROJECT_DIR$/temp/kenmccrary/jtella/DownloadConstants.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/com/kenmccrary/jtella/FileServerSession.java" afterPath="$PROJECT_DIR$/temp/kenmccrary/jtella/FileServerSession.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/com/kenmccrary/jtella/GNUTellaConnection.java" afterPath="$PROJECT_DIR$/temp/kenmccrary/jtella/GNUTellaConnection.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/com/kenmccrary/jtella/GUID.java" afterPath="$PROJECT_DIR$/temp/kenmccrary/jtella/GUID.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/com/kenmccrary/jtella/Host.java" afterPath="$PROJECT_DIR$/temp/kenmccrary/jtella/Host.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/com/kenmccrary/jtella/HostCache.java" afterPath="$PROJECT_DIR$/temp/kenmccrary/jtella/HostCache.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/com/kenmccrary/jtella/HostCacheConnection.java" afterPath="$PROJECT_DIR$/temp/kenmccrary/jtella/HostCacheConnection.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/com/kenmccrary/jtella/HostFeed.java" afterPath="$PROJECT_DIR$/temp/kenmccrary/jtella/HostFeed.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/com/kenmccrary/jtella/IncomingConnectionManager.java" afterPath="$PROJECT_DIR$/temp/kenmccrary/jtella/IncomingConnectionManager.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/com/kenmccrary/jtella/InformationConnection.java" afterPath="$PROJECT_DIR$/temp/kenmccrary/jtella/InformationConnection.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/com/kenmccrary/jtella/KeepAliveThread.java" afterPath="$PROJECT_DIR$/temp/kenmccrary/jtella/KeepAliveThread.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/com/kenmccrary/jtella/Message.java" afterPath="$PROJECT_DIR$/temp/kenmccrary/jtella/Message.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/com/kenmccrary/jtella/MessageFactory.java" afterPath="$PROJECT_DIR$/temp/kenmccrary/jtella/MessageFactory.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/com/kenmccrary/jtella/MessageReceiver.java" afterPath="$PROJECT_DIR$/temp/kenmccrary/jtella/MessageReceiver.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/com/kenmccrary/jtella/MessageReceiverAdapter.java" afterPath="$PROJECT_DIR$/temp/kenmccrary/jtella/MessageReceiverAdapter.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/com/kenmccrary/jtella/NodeConnection.java" afterPath="$PROJECT_DIR$/temp/kenmccrary/jtella/NodeConnection.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/com/kenmccrary/jtella/OriginateTable.java" afterPath="$PROJECT_DIR$/temp/kenmccrary/jtella/OriginateTable.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/com/kenmccrary/jtella/OutgoingConnectionManager.java" afterPath="$PROJECT_DIR$/temp/kenmccrary/jtella/OutgoingConnectionManager.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/com/kenmccrary/jtella/PingMessage.java" afterPath="$PROJECT_DIR$/temp/kenmccrary/jtella/PingMessage.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/com/kenmccrary/jtella/PongMessage.java" afterPath="$PROJECT_DIR$/temp/kenmccrary/jtella/PongMessage.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/com/kenmccrary/jtella/PushMessage.java" afterPath="$PROJECT_DIR$/temp/kenmccrary/jtella/PushMessage.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/com/kenmccrary/jtella/RouteTable.java" afterPath="$PROJECT_DIR$/temp/kenmccrary/jtella/RouteTable.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/com/kenmccrary/jtella/Router.java" afterPath="$PROJECT_DIR$/temp/kenmccrary/jtella/Router.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/com/kenmccrary/jtella/SearchMessage.java" afterPath="$PROJECT_DIR$/temp/kenmccrary/jtella/SearchMessage.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/com/kenmccrary/jtella/SearchMonitorSession.java" afterPath="$PROJECT_DIR$/temp/kenmccrary/jtella/SearchMonitorSession.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/com/kenmccrary/jtella/SearchReplyMessage.java" afterPath="$PROJECT_DIR$/temp/kenmccrary/jtella/SearchReplyMessage.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/com/kenmccrary/jtella/SearchSession.java" afterPath="$PROJECT_DIR$/temp/kenmccrary/jtella/SearchSession.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/com/kenmccrary/jtella/Utilities.java" afterPath="$PROJECT_DIR$/temp/kenmccrary/jtella/Utilities.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/com/kenmccrary/jtella/util/BoundedQueue.java" afterPath="$PROJECT_DIR$/temp/kenmccrary/jtella/util/BoundedQueue.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/com/kenmccrary/jtella/util/Log.java" afterPath="$PROJECT_DIR$/temp/kenmccrary/jtella/util/Log.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/com/kenmccrary/jtella/util/LoggingThreadGroup.java" afterPath="$PROJECT_DIR$/temp/kenmccrary/jtella/util/LoggingThreadGroup.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/com/kenmccrary/jtella/util/SocketFactory.java" afterPath="$PROJECT_DIR$/temp/kenmccrary/jtella/util/SocketFactory.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/com/kenmccrary/jtella/util/UniqueIDGenerator.java" afterPath="$PROJECT_DIR$/temp/kenmccrary/jtella/util/UniqueIDGenerator.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/com/zergood/gnucrawler/Interrupt2.java" afterPath="$PROJECT_DIR$/src/main/com/zergood/gnucrawler/ByteOrder.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/com/zergood/gnucrawler/Host.java" afterPath="$PROJECT_DIR$/src/main/com/zergood/gnucrawler/Host.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/com/zergood/gnucrawler/Parser.java" afterPath="$PROJECT_DIR$/src/main/com/zergood/gnucrawler/Parser.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="gnucrawler.iws" />
@@ -32,7 +67,9 @@
     <file path="/ChannelManager.java" changelist="8d37c8e4-d415-447d-8d12-02f6ccfde1c0" time="1389304621152" ignored="false" />
     <file path="/Parser.java" changelist="8d37c8e4-d415-447d-8d12-02f6ccfde1c0" time="1389303421596" ignored="false" />
     <file path="/Host.java" changelist="8d37c8e4-d415-447d-8d12-02f6ccfde1c0" time="1389304826272" ignored="false" />
-    <file path="/Dummy.txt" changelist="8d37c8e4-d415-447d-8d12-02f6ccfde1c0" time="1389305025954" ignored="false" />
+    <file path="/Dummy.txt" changelist="8d37c8e4-d415-447d-8d12-02f6ccfde1c0" time="1389305035019" ignored="false" />
+    <file path="/Interrupt2.java" changelist="8d37c8e4-d415-447d-8d12-02f6ccfde1c0" time="1389305282303" ignored="false" />
+    <file path="/ByteOrder.java" changelist="8d37c8e4-d415-447d-8d12-02f6ccfde1c0" time="1389305356518" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,10 +130,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="CrawlerInterrupt.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/com/zergood/gnucrawler/CrawlerInterrupt.java">
+      <file leaf-file-name="PushWaits.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/temp/dan/jtella/PushWaits.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="11" selection-start="237" selection-end="237" vertical-scroll-proportion="0.23356402">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Log.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/temp/kenmccrary/jtella/util/Log.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -122,22 +168,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GUID.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/com/kenmccrary/jtella/GUID.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="13" selection-start="957" selection-end="957" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Parser.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="Parser.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/com/zergood/gnucrawler/Parser.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="36" column="53" selection-start="1095" selection-end="1095" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state line="11" column="13" selection-start="223" selection-end="223" vertical-scroll-proportion="0.28546712">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -151,30 +186,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CrawlerTest.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/com/zergood/gnucrawler/CrawlerTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="41" column="25" selection-start="1233" selection-end="1233" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Host.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/com/kenmccrary/jtella/Host.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="13" selection-start="963" selection-end="963" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="ChannelManager.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/com/zergood/gnucrawler/ChannelManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="0" selection-start="33" selection-end="33" vertical-scroll-proportion="0.0">
+            <state line="17" column="13" selection-start="425" selection-end="425" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#541#556#0" expanded="true" />
@@ -183,10 +198,21 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="ByteOrderInterrupt.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/com/zergood/gnucrawler/interruptors/ByteOrderInterrupt.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="6" column="22" selection-start="139" selection-end="139" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="ByteOrder.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/com/zergood/gnucrawler/ByteOrder.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="46" column="13" selection-start="1285" selection-end="1285" vertical-scroll-proportion="0.0">
+            <state line="162" column="51" selection-start="5102" selection-end="5102" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -211,19 +237,21 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/src/main/java/gnucrawler/App.java" />
-        <option value="$PROJECT_DIR$/src/main/com/zergood/gnucrawler/Interrupt2.java" />
         <option value="$PROJECT_DIR$/src/main/com/dan/jtella/GWebCaches.java" />
         <option value="$PROJECT_DIR$/src/main/com/zergood/gnucrawler/JGraphAdapterDemo.java" />
         <option value="$PROJECT_DIR$/src/main/com/zergood/gnucrawler/CrawlerMain.java" />
         <option value="$PROJECT_DIR$/src/main/com/zergood/gnucrawler/CrawlerInterrupt.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/test/com/zergood/gnucrawler/CrawlerTest2.java" />
-        <option value="$PROJECT_DIR$/src/main/com/zergood/gnucrawler/Parser.java" />
         <option value="$PROJECT_DIR$/src/test/com/zergood/gnucrawler/CrawlerTest.java" />
         <option value="$PROJECT_DIR$/src/main/com/zergood/gnucrawler/EntryPoint.java" />
         <option value="$PROJECT_DIR$/src/main/com/zergood/gnucrawler/Host.java" />
         <option value="$PROJECT_DIR$/src/main/com/zergood/gnucrawler/Crawler.java" />
         <option value="$PROJECT_DIR$/src/main/com/zergood/gnucrawler/ChannelManager.java" />
+        <option value="$PROJECT_DIR$/src/main/com/zergood/gnucrawler/Parser.java" />
+        <option value="$PROJECT_DIR$/src/main/com/zergood/gnucrawler/Interrupt2.java" />
+        <option value="$PROJECT_DIR$/src/main/com/zergood/gnucrawler/interruptors/ByteOrderInterrupt.java" />
+        <option value="$PROJECT_DIR$/src/main/com/zergood/gnucrawler/ByteOrder.java" />
       </list>
     </option>
   </component>
@@ -335,14 +363,6 @@
               <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gnucrawler" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -362,63 +382,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="gnucrawler" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gnucrawler" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gnucrawler" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jtella" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gnucrawler" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gnucrawler" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jtella" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -460,10 +424,11 @@
       <recent name="com.zergood.gnucrawler" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/temp/kenmccrary" />
+      <recent name="$PROJECT_DIR$/temp/dan" />
+      <recent name="$PROJECT_DIR$/temp" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/src/main" />
-      <recent name="$PROJECT_DIR$/src/main/com/zergood/gnucrawler" />
-      <recent name="$PROJECT_DIR$/src/main/java/gnucrawler" />
     </key>
   </component>
   <component name="RunManager" selected="Application.EntryPoint">
@@ -754,6 +719,11 @@
       <created>1389192817322</created>
       <updated>1389192817322</updated>
     </task>
+    <task id="LOCAL-00001" summary="Before cleaning commit.">
+      <created>1389305056409</created>
+      <updated>1389305056409</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -854,20 +824,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/com/dan/jtella/GetHostsFromCache.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="168" column="36" selection-start="4830" selection-end="4830" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///usr/lib/jvm/java-1.6.0-openjdk-i386/jre/lib/rt.jar!/java/util/Timer.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="16" selection-start="670" selection-end="670" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///usr/lib/jvm/java-1.6.0-openjdk-i386/jre/lib/rt.jar!/java/util/Date.class">
       <provider selected="true" editor-type-id="text-editor">
         <state line="16" column="11" selection-start="682" selection-end="682" vertical-scroll-proportion="0.0">
@@ -882,20 +838,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/com/zergood/gnucrawler/Interrupt2.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="22" selection-start="199" selection-end="199" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/com/zergood/gnucrawler/CrawlerMain.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="205" column="35" selection-start="7762" selection-end="7762" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/com/zergood/gnucrawler/CrawlerTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="41" column="25" selection-start="1233" selection-end="1233" vertical-scroll-proportion="0.0">
@@ -905,16 +847,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/com/kenmccrary/jtella/GUID.java">
+    <entry file="file://$PROJECT_DIR$/temp/dan/jtella/PushWaits.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="13" selection-start="957" selection-end="957" vertical-scroll-proportion="0.0">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/com/zergood/gnucrawler/Parser.java">
+    <entry file="file://$PROJECT_DIR$/temp/kenmccrary/jtella/util/Log.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="53" selection-start="1095" selection-end="1095" vertical-scroll-proportion="0.0">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/com/zergood/gnucrawler/interruptors/ByteOrderInterrupt.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="22" selection-start="139" selection-end="139" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -928,24 +877,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/com/zergood/gnucrawler/ByteOrder.java">
+    <entry file="file://$PROJECT_DIR$/src/main/com/zergood/gnucrawler/ChannelManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="46" column="13" selection-start="1285" selection-end="1285" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/com/kenmccrary/jtella/Host.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="13" selection-start="963" selection-end="963" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/com/zergood/gnucrawler/Host.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="13" selection-start="964" selection-end="964" vertical-scroll-proportion="0.0">
-          <folding />
+        <state line="17" column="13" selection-start="425" selection-end="425" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#541#556#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -958,19 +896,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/com/zergood/gnucrawler/ChannelManager.java">
+    <entry file="file://$PROJECT_DIR$/src/main/com/zergood/gnucrawler/ByteOrder.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="0" selection-start="33" selection-end="33" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#541#556#0" expanded="true" />
-          </folding>
+        <state line="162" column="51" selection-start="5102" selection-end="5102" vertical-scroll-proportion="0.0">
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/com/zergood/gnucrawler/CrawlerInterrupt.java">
+    <entry file="file://$PROJECT_DIR$/src/main/com/zergood/gnucrawler/Host.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="11" selection-start="237" selection-end="237" vertical-scroll-proportion="0.23356402">
+        <state line="26" column="13" selection-start="964" selection-end="964" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/com/zergood/gnucrawler/Parser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="13" selection-start="223" selection-end="223" vertical-scroll-proportion="0.28546712">
           <folding />
         </state>
       </provider>

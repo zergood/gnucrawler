@@ -2,6 +2,8 @@ package com.zergood.gnucrawler;
 
 //package com.matei.eece411;
 
+import com.zergood.gnucrawler.interruptors.ByteOrderInterrupt;
+
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
@@ -158,7 +160,7 @@ public class ByteOrder {
 		int numread = 0;
 		keepReading = true;
 		Timer interrupt = new Timer();
-		interrupt.schedule(new Interrupt2(), 5000);
+		interrupt.schedule(new ByteOrderInterrupt(), 5000);
 		do {
 			try {
 				buf.clear();

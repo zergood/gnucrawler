@@ -1,7 +1,5 @@
 package com.zergood.gnucrawler;
 
-import com.kenmccrary.jtella.Host;
-
 import java.util.List;
 
 /**
