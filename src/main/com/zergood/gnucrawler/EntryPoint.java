@@ -1,21 +1,20 @@
 package com.zergood.gnucrawler;
 
-import java.net.MalformedURLException;
+import com.zergood.gnucrawler.storage.Neo4jStorage;
+
 
 /**
- * Created with IntelliJ IDEA.
- * User: zergood
- * Date: 10.01.14
- * Time: 0:06
- * To change this template use File | Settings | File Templates.
+ *
  */
 public class EntryPoint {
+    private static final String SERVER_ROOT_URI = "http://localhost:7474/db/data/";
+
     public static void main(String[] args) throws Exception {
         Crawler crawler = new Crawler(49000,"http://gweb.dwbo.nl/");
         crawler.initHostCache();
         crawler.crawl();
-        Thread.sleep(40000);
-        Parser parser = new Parser(crawler.getKnownHostsAsList());
-        System.out.println(parser.collectRoutes());
+        Thread.sleep(20000);
+        Neo4jStorage storage = new Neo4jStorage(crawler.getKnownHostsAsList(), SERVER_ROOT_URI);
+        storage.store();
     }
 }
