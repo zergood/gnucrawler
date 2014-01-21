@@ -12,6 +12,7 @@ import java.nio.channels.SocketChannel;
 import java.util.*;
 
 public class Crawler {
+
     final int LOCAL_PORT;
     private boolean forceEnd = false;
     private boolean crawlingFlag = false;

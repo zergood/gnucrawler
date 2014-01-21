@@ -7,9 +7,6 @@ import org.neo4j.rest.graphdb.RestGraphDatabase;
 
 import java.util.List;
 
-/**
- *
- */
 public class Neo4jStorage {
     private List<Host> hosts;
     private GraphDatabaseService gds;
