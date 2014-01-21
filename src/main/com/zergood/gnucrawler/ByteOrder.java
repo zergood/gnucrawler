@@ -1,7 +1,5 @@
 package com.zergood.gnucrawler;
 
-//package com.matei.eece411;
-
 import com.zergood.gnucrawler.interruptors.ByteOrderInterrupt;
 
 import java.io.IOException;

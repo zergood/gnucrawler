@@ -8,14 +8,8 @@ import java.nio.channels.Selector;
 import java.nio.channels.SocketChannel;
 import java.util.*;
 
-/**
- * Created with IntelliJ IDEA.
- * User: zergood
- * Date: 10.01.14
- * Time: 0:51
- * To change this template use File | Settings | File Templates.
- */
 public class ChannelManager {
+
     Selector selector;
     List<Host> hosts;
     List<SocketChannel> socketChannels = new ArrayList<SocketChannel>();

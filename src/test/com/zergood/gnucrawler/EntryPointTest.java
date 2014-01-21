@@ -2,9 +2,6 @@ package com.zergood.gnucrawler;
 
 import org.junit.Test;
 
-/**
- *
- */
 public class EntryPointTest {
     @Test
     public void testName() throws Exception {

@@ -2,10 +2,6 @@ package com.zergood.gnucrawler;
 
 import com.zergood.gnucrawler.storage.Neo4jStorage;
 
-
-/**
- *
- */
 public class EntryPoint {
     private static final String SERVER_ROOT_URI = "http://localhost:7474/db/data/";
 
