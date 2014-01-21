@@ -107,13 +107,14 @@ public class Crawler {
         ChannelManager channelManager = new ChannelManager(Selector.open(), hosts);
         crawlingFlag = true;
         long startedAt = System.currentTimeMillis();
-        while((System.currentTimeMillis() - startedAt) < CRAWL_TIME_INTERVAL){
+//        while((System.currentTimeMillis() - startedAt) < CRAWL_TIME_INTERVAL)
+        while(channelManager.getCrawledHost().size() < 100){
+            System.out.println("NODE CRAWLED:" + String.valueOf(channelManager.getCrawledHost().size()));
             int readyChannels = channelManager.getReadyChannels();
             if (readyChannels == 0) continue;
             Set<SelectionKey> selectedKeys = channelManager.getSelectedKeys();
             Iterator<SelectionKey> keyIterator = selectedKeys.iterator();
             while (keyIterator.hasNext()) {
-                System.out.println("here!");
                 SelectionKey key = keyIterator.next();
                 if (key.isValid() && key.isConnectable()) {
                     SocketChannel sChannel = (SocketChannel)key.channel();

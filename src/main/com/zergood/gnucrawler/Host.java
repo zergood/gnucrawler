@@ -30,6 +30,12 @@ public class Host {
         this.sharedFileSize = sharedFileSize;
     }
 
+    public Host(String ipAddress, int port, boolean isUltrapeer){
+        this.ipAddress = ipAddress;
+        this.port = port;
+        this.isUltrapeer = isUltrapeer;
+    }
+
     /**
      * Get text based host information
      */
@@ -45,10 +51,8 @@ public class Host {
 
         Host host = (Host) o;
 
-        if (isUltrapeer != host.isUltrapeer) return false;
         if (port != host.port) return false;
         if (ipAddress != null ? !ipAddress.equals(host.ipAddress) : host.ipAddress != null) return false;
-
         return true;
     }
 

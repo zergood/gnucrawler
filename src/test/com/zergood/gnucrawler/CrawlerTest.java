@@ -2,6 +2,13 @@ package com.zergood.gnucrawler;
 
 import org.junit.Test;
 
+import java.io.IOException;
+import java.net.InetSocketAddress;
+import java.nio.channels.Selector;
+import java.nio.channels.SocketChannel;
+import java.util.ArrayList;
+import java.util.List;
+
 import static org.junit.Assert.assertTrue;
 
 /**
@@ -39,6 +46,14 @@ public class CrawlerTest {
         crawler.initHostCache();
         crawler.crawl();
         Thread.sleep(30000);
+        assertTrue(true);
+    }
+
+    @Test
+    public void testConnectionManager() throws Exception {
+        List<Host> hosts = new ArrayList<Host>();
+        hosts.add(new Host("88.163.79.114", 6634, true));
+        ChannelManager channelManager = new ChannelManager(Selector.open(), hosts);
         assertTrue(true);
     }
 
