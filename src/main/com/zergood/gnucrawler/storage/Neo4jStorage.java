@@ -26,7 +26,7 @@ public class Neo4jStorage {
         Node self = gds.createNode();
         for (Host host : hosts) {
             Node node = gds.createNode();
-            node.setProperty("ip", host.getIPAddress());
+            node.setProperty("ip", host.getIpAddress());
             self.createRelationshipTo(node, relTypes.KNOWS);
             if (host.getResponse().length() > 2) {
                 storeUpeers(node, host);

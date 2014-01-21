@@ -26,7 +26,7 @@ public class ChannelManager {
         for (int i = 0; i < hosts.size(); i++) {
             SocketChannel sChannel = SocketChannel.open();
             sChannel.configureBlocking(false);
-            sChannel.connect(new InetSocketAddress(hosts.get(i).getIPAddress(), hosts.get(i).getPort()));
+            sChannel.connect(new InetSocketAddress(hosts.get(i).getIpAddress(), hosts.get(i).getPort()));
             sChannel.register(selector, sChannel.validOps(), hosts.get(i));
             socketChannels.add(sChannel);
         }
@@ -43,7 +43,7 @@ public class ChannelManager {
     public void write (SocketChannel sChannel, Host host){
         System.out.println("write!");
         if(!host.isWriteFlag()) {
-            System.out.println(host.getIPAddress());
+            System.out.println(host.getIpAddress());
             ByteBuffer buf = ByteBuffer.allocateDirect(4444);
             String GNodetName = sChannel.socket().getInetAddress().getHostName();
             System.out.println("Host name is : " + GNodetName);

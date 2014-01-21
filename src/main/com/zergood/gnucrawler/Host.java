@@ -1,39 +1,100 @@
-/*
- * Copyright (C) 2000-2001  Ken McCrary
- *
- * This library is free software; you can redistribute it and/or
- * modify it under the terms of the GNU Lesser General Public
- * License as published by the Free Software Foundation; either
- * version 2.1 of the License, or (at your option) any later version.
- *
- * This library is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
- * Lesser General Public License for more details.
- *
- * You should have received a copy of the GNU Lesser General Public
- * License along with this library; if not, write to the Free Software
- * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
- *
- * Email: jkmccrary@yahoo.com
- */
 package com.zergood.gnucrawler;
 
-/**
- * EDITED BY: Daniel Meyers, 2003<br>
- * Contains the location of a host on the network
- *
- */
 public class Host {
-	private String ipAddress;
-	private int port;
 
-	/**
-	 * This remains false as default, but can be set if required
-	 */
-	private boolean isUltrapeer;
-	private int sharedFileCount;
-	private int sharedFileSize;
+    private String ipAddress;
+    private int port;
+
+    private boolean isUltrapeer;
+    private int sharedFileCount;
+    private int sharedFileSize;
+
+    private String response = "";
+
+    private boolean readFlag = false;
+    private boolean writeFlag = false;
+
+    /**
+     * Constructs a Host
+     *
+     * @param ipAddress       IP address
+     * @param port            port
+     * @param sharedFileCount count of shared files
+     * @param sharedFileSize  total shared file size in KB
+     */
+    public Host(String ipAddress, int port, int sharedFileCount, int sharedFileSize) {
+        this.ipAddress = ipAddress;
+        this.port = port;
+        this.isUltrapeer = false;
+        this.sharedFileCount = sharedFileCount;
+        this.sharedFileSize = sharedFileSize;
+    }
+
+    /**
+     * Get text based host information
+     */
+    @Override
+    public String toString() {
+        return ipAddress + ":" + port;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+
+        Host host = (Host) o;
+
+        if (isUltrapeer != host.isUltrapeer) return false;
+        if (port != host.port) return false;
+        if (ipAddress != null ? !ipAddress.equals(host.ipAddress) : host.ipAddress != null) return false;
+
+        return true;
+    }
+
+    @Override
+    public int hashCode() {
+        int result = ipAddress != null ? ipAddress.hashCode() : 0;
+        result = 31 * result + port;
+        result = 31 * result + (isUltrapeer ? 1 : 0);
+        return result;
+    }
+
+    public String getIpAddress() {
+        return ipAddress;
+    }
+
+    public int getPort() {
+        return port;
+    }
+
+    /**
+     * Sets whether this host is an Ultrapeer
+     */
+    public void setUltrapeer(boolean ultrapeer) {
+        this.isUltrapeer = ultrapeer;
+    }
+
+    /**
+     * Return true if this host is an Ultrapeer, false otherwise
+     */
+    public boolean getUltrapeer() {
+        return isUltrapeer;
+    }
+
+    /**
+     * Return shared file count
+     */
+    public int getSharedFileCount() {
+        return sharedFileCount;
+    }
+
+    /**
+     * Reurn the shared file size
+     */
+    public int getSharedFileSize() {
+        return sharedFileSize;
+    }
 
     public String getResponse() {
         return response;
@@ -43,8 +104,6 @@ public class Host {
         this.response = response;
     }
 
-    private String response = "";
-
     public boolean isReadFlag() {
         return readFlag;
     }
@@ -53,8 +112,6 @@ public class Host {
         this.readFlag = readFlag;
     }
 
-    private boolean readFlag = false;
-
     public boolean isWriteFlag() {
         return writeFlag;
     }
@@ -62,116 +119,4 @@ public class Host {
     public void setWriteFlag(boolean writeFlag) {
         this.writeFlag = writeFlag;
     }
-
-    private boolean writeFlag = false;
-	/**
-	 * Construct a host record
-	 *
-	 * @param ipAddress host address
-	 */
-	/* 
-	Host(String ipAddress, int port)
-	{
-	  this.ipAddress = ipAddress;
-	  this.port = port;
-	}
-	*/
-
-	/**
-	 * Constructs a Host
-	 *
-	 * @param ipAddress IP address
-	 * @param port port
-	 * @param sharedFileCount count of shared files
-	 * @param sharedFileSize total shared file size in KB 
-	 */
-	public Host(String ipAddress, int port, int sharedFileCount, int sharedFileSize) {
-		this.ipAddress = ipAddress;
-		this.port = port;
-		this.isUltrapeer = false;
-		this.sharedFileCount = sharedFileCount;
-		this.sharedFileSize = sharedFileSize;
-	}
-
-
-
-	/**
-	 * Returns the address
-	 */
-	public String getIPAddress() {
-		return ipAddress;
-	}
-
-	/**
-	 * Returns the port
-	 */
-	public int getPort() {
-		return port;
-	}
-
-	/**
-	 * ADDED BY: Daniel Meyers, 2003
-	 * <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-	 * Sets whether this host is an Ultrapeer
-	 *
-	 */
-	public void setUltrapeer(boolean ultrapeer) {
-		this.isUltrapeer = ultrapeer;
-	}
-
-	/**
-	 * ADDED BY: Daniel Meyers, 2003
-	 * <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-	 * Return true if this host is an Ultrapeer, false otherwise
-	 *
-	 */
-	public boolean getUltrapeer() {
-		return isUltrapeer;
-	}
-
-	/**
-	 * Return shared file count
-	 *
-	 * @return file count
-	 */
-	public int getSharedFileCount() {
-		return sharedFileCount;
-	}
-
-	/**
-	 * Reurn the shared file size
-	 *
-	 * @return size in KB
-	 */
-	public int getSharedFileSize() {
-		return sharedFileSize;
-	}
-
-	/**
-	 * Equals comparison
-	 */
-	public boolean equals(Object obj) {
-		if (!(obj instanceof Host)) {
-			return false;
-		}
-
-		Host rhs = (Host)obj;
-
-		return getIPAddress().equals(rhs.getIPAddress())
-			&& getPort() == rhs.getPort();
-	}
-
-	/**
-	 * Use the IP address for the hashcode
-	 */
-	public int hashCode() {
-		return getIPAddress().hashCode();
-	}
-
-	/**
-	 * Get text based host information
-	 */
-	public String toString() {
-		return new String(ipAddress + ":" + port);
-	}
 }

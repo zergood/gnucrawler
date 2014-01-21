@@ -30,7 +30,7 @@ public class CrawlerTest {
     public void testGetKnownHostsAsList() throws Exception {
         Crawler crawler = new Crawler(49000,"http://gweb.dwbo.nl/");
         crawler.initHostCache();
-        assertTrue(crawler.getKnownHostsAsList().get(0).getIPAddress().length() > 0);
+        assertTrue(crawler.getKnownHostsAsList().get(0).getIpAddress().length() > 0);
     }
 
     @Test

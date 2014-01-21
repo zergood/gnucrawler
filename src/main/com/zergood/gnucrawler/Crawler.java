@@ -94,7 +94,7 @@ public class Crawler {
     public String getKnownHostsAsString(){
         String result = "";
         for (int i = 0; i < hosts.size(); i++) {
-            result += hosts.get(i).getIPAddress();
+            result += hosts.get(i).getIpAddress();
         }
         return result;
     }
