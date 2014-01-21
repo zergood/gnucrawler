@@ -12,13 +12,15 @@
 
     <repositories>
         <repository>
-            <id>mvn-neo4j</id>
-            <url>http://m2.neo4j.org/releases/org/neo4j/neo4j-rest-graphdb/2.0.0-M06/</url>
+            <id>neo4j-releases</id>
+            <url>http://m2.neo4j.org/releases/</url>
         </repository>
     </repositories>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+      <neo4j.version>2.0.0</neo4j.version>
+      <neo4j-rest-graphdb.version>2.0.0-M06</neo4j-rest-graphdb.version>
   </properties>
 
   <dependencies>
@@ -30,12 +32,12 @@
     <dependency>
         <groupId>org.neo4j</groupId>
         <artifactId>neo4j</artifactId>
-        <version>2.0.0</version>
+        <version>${neo4j.version}</version>
     </dependency>
       <dependency>
           <groupId>org.neo4j</groupId>
           <artifactId>neo4j-rest-graphdb</artifactId>
-          <version>2.0.0-M06</version>
+          <version>${neo4j-rest-graphdb.version}</version>
       </dependency>
       <dependency>
         <groupId>com.sun.jersey</groupId>
