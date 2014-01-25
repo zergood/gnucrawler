@@ -47,12 +47,12 @@ public class ChannelManager {
         System.out.println("HOST PORT:" + host.getPort());
         try{
             if(!crawledHost.contains(host)){
+                crawledHost.add(host);
                 SocketChannel sChannel = SocketChannel.open();
                 sChannel.configureBlocking(false);
                 sChannel.connect(new InetSocketAddress(host.getIpAddress(), host.getPort()));
                 sChannel.register(selector, sChannel.validOps(), host);
                 socketChannels.add(sChannel);
-                crawledHost.add(host);
             }
         }catch(Exception e){
             System.out.println("########################IO EXEPTION##################################################");

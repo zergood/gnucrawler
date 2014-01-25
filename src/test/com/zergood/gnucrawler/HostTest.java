@@ -18,8 +18,8 @@ public class HostTest {
 
     @Test
     public void testEqualsLeafAndUpeers() throws Exception {
-        Host A = new Host("174.19.25.32", 46871, true);
-        Host B = new Host("174.19.25.32", 46871, false);
+        Host A = new Host("219.211.83.207", 6346, true);
+        Host B = new Host("219.211.83.207", 6346, false);
         assertTrue(A.equals(B));
     }
 

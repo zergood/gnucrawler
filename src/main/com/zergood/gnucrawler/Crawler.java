@@ -108,8 +108,8 @@ public class Crawler {
         ChannelManager channelManager = new ChannelManager(Selector.open(), hosts);
         crawlingFlag = true;
         long startedAt = System.currentTimeMillis();
-//        while((System.currentTimeMillis() - startedAt) < CRAWL_TIME_INTERVAL)
-        while(channelManager.getCrawledHost().size() < 100){
+        while((System.currentTimeMillis() - startedAt) < CRAWL_TIME_INTERVAL){
+//        while(channelManager.getCrawledHost().size() < 1000){
             System.out.println("NODE CRAWLED:" + String.valueOf(channelManager.getCrawledHost().size()));
             int readyChannels = channelManager.getReadyChannels();
             if (readyChannels == 0) continue;
